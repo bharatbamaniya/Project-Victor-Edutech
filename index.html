@@ -24,11 +24,34 @@
             }
         }
 
+        @media screen and (min-device-width:0px) and (max-device-width:1027px) and (-webkit--webkit-min-device-pixel-ratio:1) {
+            .footer-logo {
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+
+        .nav-item a {
+            border: 1px solid white;
+            /* margin: 0rem .5rem; */
+            border-radius: 30px;
+            padding: 0.3rem .5rem 0.3rem .5rem;
+            margin: 0.1rem;
+        }
+
+        .nav-item a:hover {
+            background-color: rgba(255, 255, 255, 0.315);
+            color: black;
+        }
+        
         .divider {
             margin: 5rem 0rem;
             border: 1px solid white;
         }
-
+        .divider-black {
+            margin: 5rem 0rem;
+            border: 1px solid rgba(0, 0, 0, 0.336);
+        }
         .card {
             width: 18rem;
             padding: 0 1rem 0 1rem;
@@ -53,6 +76,13 @@
             line-height: 1;
             /* rtl:remove */
             letter-spacing: -.05rem;
+        }
+        .footer-payment-icon img{
+            filter: grayscale(0%);
+            margin: 0 .5rem;
+        }
+        .footer-payment-icon img:hover{
+            filter: grayscale(100%);
         }
     </style>
 
@@ -161,7 +191,7 @@
             <div class="row gx-0 d-flex justify-content-center align-items-center">
 
                 <div class="card col-sm-6 bg-dark">
-                    <img src="/img/thumb3.jpg" class="card-img-top" alt="service-img" height="250" width="200">
+                    <img src="/img/thumb3.jpg" class="card-img-top" alt="service-img" height="180" width="150">
                     <div class="card-body text-center text-light ">
                         <h5 class="card-title">Card title</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of
@@ -172,7 +202,7 @@
                 </div>
 
                 <div class="card col-sm-6 bg-dark">
-                    <img src="/img/thumb3.jpg" class="card-img-top" alt="service-img" height="250" width="200">
+                    <img src="/img/thumb3.jpg" class="card-img-top" alt="service-img" height="180" width="150">
                     <div class="card-body text-center text-light">
                         <h5 class="card-title">Card title</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of
@@ -184,7 +214,7 @@
 
 
                 <div class="card col-sm-6 bg-dark">
-                    <img src="/img/thumb3.jpg" class="card-img-top" alt="service-img" height="250" width="200">
+                    <img src="/img/thumb3.jpg" class="card-img-top" alt="service-img" height="180" width="150">
                     <div class="card-body text-center text-light">
                         <h5 class="card-title ">Card title</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of
@@ -306,7 +336,85 @@
     </div>
 
     <!--Spaces Using <hr/>-->
-    <hr class="divider">
+    <hr class="divider-black">
+
+
+    <!--footer-->
+
+    <footer>
+    <div class="container py-5 mb-5">
+        <div class="row">
+            <div class="col-12 col-md footer-logo">
+                <img src="/img/Victor-logo.svg.png" alt="logo" height="40" width="120" class="d-block mb-2">
+
+                </svg>
+                <small class="d-block mb-3 text-muted">© 2019-2020</small>
+            </div>
+            <div class="col-6 col-md">
+                <h5>Features</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a class="link-secondary" href="#">Cool stuff</a></li>
+                    <li><a class="link-secondary" href="#">Random feature</a></li>
+                    <li><a class="link-secondary" href="#">Team feature</a></li>
+                    <li><a class="link-secondary" href="#">Stuff for developers</a></li>
+                    <li><a class="link-secondary" href="#">Another one</a></li>
+                    <li><a class="link-secondary" href="#">Last time</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-md">
+                <h5>Resources</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a class="link-secondary" href="#">Resource name</a></li>
+                    <li><a class="link-secondary" href="#">Resource</a></li>
+                    <li><a class="link-secondary" href="#">Another resource</a></li>
+                    <li><a class="link-secondary" href="#">Final resource</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-md">
+                <h5>Resources</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a class="link-secondary" href="#">Business</a></li>
+                    <li><a class="link-secondary" href="#">Education</a></li>
+                    <li><a class="link-secondary" href="#">Government</a></li>
+                    <li><a class="link-secondary" href="#">Gaming</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-md">
+                <h5>About</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a class="link-secondary" href="#">Team</a></li>
+                    <li><a class="link-secondary" href="#">Offices</a></li>
+                    <li><a class="link-secondary" href="#">Privacy</a></li>
+                    <li><a class="link-secondary" href="#">Terms</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="row my-5 d-flex align-items-center">
+            <div class="col-12 col-md ">
+                <p>© Copyright Victor Edutech 2019-2020</p>
+            </div>
+            <div class="col-12 col-md col-sm-6 d-flex justify-content-center align-items-center footer-payment-icon">
+                <img src="img/payment1.png" alt="payment-logo">
+                <img src="img/payment2.png" alt="payment-logo">
+                <img src="img/payment6.png" alt="payment-logo" width="100" height="50">
+            </div>
+            <div class="col-12 col-md col-sm-6 d-flex justify-content-end align-items-end">
+                <a href="#">
+                    <svg class="" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+    </footer>
+
+
+
 
 
 
