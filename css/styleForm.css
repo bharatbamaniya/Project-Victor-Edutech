@@ -1,0 +1,9 @@
+form input{
+    width: 20rem;
+    margin: 0 1rem;
+    height: 2.5rem;
+}
+form textarea {
+    width: 20rem;
+    height: 8rem;
+}

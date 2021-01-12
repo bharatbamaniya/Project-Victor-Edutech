@@ -15,6 +15,7 @@
 
     <link rel="stylesheet" href="/css/style.css" type="text/css">
     <link rel="stylesheet" href="/css/styleTeamDetail.css" type="text/css">
+    <link rel="stylesheet" href="/css/styleForm.css" type="text/css">
 
     <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&libraries=&v=weekly"
         defer></script>
@@ -88,15 +89,16 @@
 
     </div>
 
+    <!-- Map and Office Detail/// -->
     <div class="container-fluid">
         <div class="row">
-            <map class="col-12 col-sm" >
+            <map class="col-12 col-sm">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.5051562423564!2d72.62476321448845!3d23.005217322750504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e87438adacc93%3A0xfdf7bdbb0a1e9ff5!2sVictor%20Edutech!5e0!3m2!1sen!2sin!4v1610454535350!5m2!1sen!2sin"
                     width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
                     tabindex="0"></iframe>
 
-                    <!-- <iframe src="https://www.google.com/maps/d/u/2/embed?mid=1_EBRaqmD3jMZd5AaRVLdVu3kLi_KlyaP" width="640" height="480"></iframe> -->
+                <!-- <iframe src="https://www.google.com/maps/d/u/2/embed?mid=1_EBRaqmD3jMZd5AaRVLdVu3kLi_KlyaP" width="640" height="480"></iframe> -->
             </map>
             <div class="col-12 col-sm d-flex flex-column justify-content-center align-items-center">
 
@@ -104,32 +106,80 @@
                 <div class="text-center" style="width: 350px; height: auto;">
                     <div class="row">
                         <div class="col-1">
-                            <a href="https://www.google.com/maps/d/u/2/edit?mid=1_EBRaqmD3jMZd5AaRVLdVu3kLi_KlyaP&usp=sharing" target="_blank" rel="noopener noreferrer"><img src="/icons/location.png" alt="location" width="42px" height="42px"></a>
+                            <a href="https://www.google.com/maps/d/u/2/edit?mid=1_EBRaqmD3jMZd5AaRVLdVu3kLi_KlyaP&usp=sharing"
+                                target="_blank" rel="noopener noreferrer"><img src="/icons/location.png" alt="location"
+                                    width="42px" height="42px"></a>
                         </div>
                         <div class="col-11">
                             <p>Street 3, Uttam Kanj, Krishnapuri, Sirohi, Rajasthan 307001</p>
                         </div>
                     </div>
-                   
-                   
+
+
                 </div>
 
                 <span class="fs-2 fw-bold heading my-4">Branch Office</span>
                 <div class="text-center" style="width: 350px; height: auto;">
                     <div class="row">
                         <div class="col-1">
-                            <a href="https://www.google.com/maps/d/u/2/edit?mid=1_EBRaqmD3jMZd5AaRVLdVu3kLi_KlyaP&usp=sharing" target="_blank" rel="noopener noreferrer"><img src="/icons/location.png" alt="location" width="42px" height="42px"></a>
+                            <a href="https://www.google.com/maps/d/u/2/edit?mid=1_EBRaqmD3jMZd5AaRVLdVu3kLi_KlyaP&usp=sharing"
+                                target="_blank" rel="noopener noreferrer"><img src="/icons/location.png" alt="location"
+                                    width="42px" height="42px"></a>
                         </div>
                         <div class="col-11">
                             <p>Near Amraiwadi Post Office, Lal Bahadur Shastri Rd, Ahmedabad, Gujarat 380026</p>
                         </div>
                     </div>
-                    
+
                 </div>
 
             </div>
         </div>
     </div>
+
+    <div class="container-fluid p-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 col-sm d-flex flex-column justify-content-center align-items-center">
+                    
+                        <span class="fs-2 fw-bold heading my-4">CONTACT US</span>
+                   
+                </div>
+                <div class="col-6 col-sm bg-secondary-color">
+                    <div class="container d-flex justify-content-center align-content-center" style="padding: 6rem;">
+                        <form name='contact' method='POST' class=""><input type='hidden' name='form-name'
+                                value='contact' />
+                            <p>
+                                <input type="text" name="name" placeholder="Name*" />
+                            </p>
+                            <p>
+                                <input type="email" name="email" placeholder="Email*" />
+                            </p>
+                            <p>
+                                <input type="text" name="subject" placeholder="Subject*" />
+                            </p>
+                            <p class="d-flex justify-content-center">
+                                <textarea name="message" placeholder="Massage*"></textarea>
+                            </p>
+                            <p class="d-flex justify-content-center">
+                                <button class="btn btn-outline-secondary" type="submit">Submit</button>
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
 
 
 
