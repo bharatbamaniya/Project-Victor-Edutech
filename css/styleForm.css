@@ -7,3 +7,12 @@ form textarea {
     width: 20rem;
     height: 8rem;
 }
+@media screen and (max-width:320){
+    form{
+        margin: 0 1rem;
+    }
+    form input {
+        width: 10rem;
+        height: 2.2rem;
+    }
+}
