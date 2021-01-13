@@ -14,3 +14,4 @@ navbarDropdown.addEventListener("mouseover", function () {
         navbarDropdownMenu.setAttribute('class', 'dropdown-menu');
     }
 });
+

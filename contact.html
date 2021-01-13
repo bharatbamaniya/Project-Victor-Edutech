@@ -26,13 +26,11 @@
 <body>
     <!--NavBar-->
     <div class="container-fluid p-0">
-        <nav class="navbar navbar-expand-lg navbar-light">
+        <nav class="navbar navbar-expand-lg navbar-light sticky-top">
 
             <div class="container-fluid">
-                <a href="/index.html"><img src="/img/Victor-logo.svg.png" class="navbar-brand float-md-start img-fluid"
-                        alt="logo" height="80" width="200"></a>
-                <!-- <a class="navbar-brand" href="#">Victor Edutech</a> -->
-
+                <a href="/index.html"><img src="/img/Victor-logo.svg.png" class="navbar-brand float-md-start img-fluid" alt="logo" height="80" width="200"></a>
+                <!-- <a class="navbar-brand" href="#"></a>Victor Edutech</a> -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -45,25 +43,17 @@
                             <a class="nav-link fs-5 " aria-current="page" href="/index.html">HOME</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link fs-5" href="/about.html">ABOUT</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle fs-5" href="/services.html" id="navbarDropdown"
-                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                SERVICES
-                            </a>
-                            <ul class="dropdown-menu" id="dropdownMenu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="/visa.html">Visa</a></li>
-                                <li><a class="dropdown-item" href="/placement.html">Placement</a></li>
-                                <li><a class="dropdown-item" href="/insurance.html">Insurance</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="/services.html">View all Services</a></li>
-                            </ul>
+                            <a class="nav-link fs-5 " href="/about.html">ABOUT</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active fs-5" href="/contact.html">CONTACT</a>
+                            <a class="nav-link fs-5 " href="/visa.html">VISA</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-5" href="/ielts.html">IELTS</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link fs-5 active" href="/contact.html">CONTACT</a>
                         </li>
                     </ul>
 
@@ -106,7 +96,7 @@
                     <div class="row">
                         <div class="col-1">
                             <a href="https://www.google.com/maps/d/u/2/edit?mid=1_EBRaqmD3jMZd5AaRVLdVu3kLi_KlyaP&usp=sharing"
-                                target="_blank" rel="noopener noreferrer"><img src="/icons/location.png" alt="location"
+                                target="_blank" rel="noopener noreferrer"><img class="lh-marker" src="/icons/location.png" alt="location"
                                     width="42px" height="42px"></a>
                         </div>
                         <div class="col-11">
@@ -122,7 +112,7 @@
                     <div class="row">
                         <div class="col-1">
                             <a href="https://www.google.com/maps/d/u/2/edit?mid=1_EBRaqmD3jMZd5AaRVLdVu3kLi_KlyaP&usp=sharing"
-                                target="_blank" rel="noopener noreferrer"><img src="/icons/location.png" alt="location"
+                                target="_blank" rel="noopener noreferrer"><img class="lb-marker" src="/icons/location.png" alt="location"
                                     width="42px" height="42px"></a>
                         </div>
                         <div class="col-11">
@@ -185,6 +175,7 @@
     <!-- social icon sticky -->
     <header>
         <div class="search-and-account">
+            <a href="tel:+918239350077"><img class="mail" src="/icons/purple-call.png" alt="social victor" aria-hidden="true"></a>
             <a href="#"><img src="/icons/whatsapp.png" alt="social victor" aria-hidden="true"></a>
             <a href="https://www.facebook.com/victoredutech.in/" target="_blank" rel="noopener noreferrer"><img src="/icons/facebook.png" alt="social victor" aria-hidden="true"></a>
             <a href="#"><img src="/icons/instagram.png" alt="social victor" aria-hidden="true"></a>
@@ -195,64 +186,8 @@
 
     <!--footer-->
     <footer>
-        <div class="container py-5 mb-5">
-            <div class="row">
-                <div class="col-12 col-md ">
-                    <img src="/img/Victor-logo.svg.png" alt="logo" height="40" width="120"
-                        class="d-block mb-2 footer-logo">
-                    </img>
-                    <small class="d-block mb-3 text-muted text-center">© 2021</small>
-
-                    <div class="row">
-                        <div class="col-4 d-flex justify-content-end"><a class="text-decoration-none text-reset"
-                                href="tel:+918239350077"><img src="icons/call.png" alt="" height="40" width="40"></a>
-                        </div>
-                        <div class="col-6 d-flex justify-content-start"><a class="text-decoration-none text-reset"
-                                href="mailto:info@victoredutech.com"><img src="icons/mail.png" alt="" height="40"
-                                    width="40"></a></div>
-                    </div>
-                </div>
-                <div class="col-6 col-md">
-                    <h5>Features</h5>
-                    <ul class="list-unstyled text-small">
-                        <li><a class="link-secondary" href="#">Cool stuff</a></li>
-                        <li><a class="link-secondary" href="#">Random feature</a></li>
-                        <li><a class="link-secondary" href="#">Team feature</a></li>
-                        <li><a class="link-secondary" href="#">Stuff for developers</a></li>
-                        <li><a class="link-secondary" href="#">Another one</a></li>
-                        <li><a class="link-secondary" href="#">Last time</a></li>
-                    </ul>
-                </div>
-                <div class="col-6 col-md">
-                    <h5>Resources</h5>
-                    <ul class="list-unstyled text-small">
-                        <li><a class="link-secondary" href="#">Resource name</a></li>
-                        <li><a class="link-secondary" href="#">Resource</a></li>
-                        <li><a class="link-secondary" href="#">Another resource</a></li>
-                        <li><a class="link-secondary" href="#">Final resource</a></li>
-                    </ul>
-                </div>
-                <div class="col-6 col-md">
-                    <h5>Resources</h5>
-                    <ul class="list-unstyled text-small">
-                        <li><a class="link-secondary" href="#">Business</a></li>
-                        <li><a class="link-secondary" href="#">Education</a></li>
-                        <li><a class="link-secondary" href="#">Government</a></li>
-                        <li><a class="link-secondary" href="#">Gaming</a></li>
-                    </ul>
-                </div>
-                <div class="col-6 col-md">
-                    <h5>About</h5>
-                    <ul class="list-unstyled text-small">
-                        <li><a class="link-secondary" href="#">Team</a></li>
-                        <li><a class="link-secondary" href="#">Offices</a></li>
-                        <li><a class="link-secondary" href="#">Privacy</a></li>
-                        <li><a class="link-secondary" href="#">Terms</a></li>
-                    </ul>
-                </div>
-
-            </div>
-
+        <div class="container py-5">
+           
             <div class="row my-5 d-flex align-items-center">
                 <div class="col-12 col-md-7">
                     <p>Copyright © 2021 Victor Edutech · All rights reserved.</p>
