@@ -101,7 +101,7 @@
 }
 
 .footer-logo{
-    background: radial-gradient(black,var(--gold));
+    
 }
 .footer-payment-icon img {
     filter: grayscale(0%);
