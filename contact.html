@@ -92,17 +92,17 @@
                 <iframe src="https://www.google.com/maps/d/u/2/embed?mid=1_EBRaqmD3jMZd5AaRVLdVu3kLi_KlyaP" width="100%"
                     height="580"></iframe>
             </map>
-            <div class="col-12 col-sm d-flex flex-column justify-content-center align-items-center">
+            <div class="col-12 col-sm py-5 d-flex flex-column justify-content-center align-items-center" >
 
                 <span class="fs-2 fw-bold heading my-4">Head Office</span>
-                <div class="text-center" style="width: 350px; height: auto;">
-                    <div class="row">
-                        <div class="col-2 px-4">
+                <div class="text-center" style="width: 320px; height: auto;">
+                    <div class="row" style="margin: 0 2rem;">
+                        <div class="col-12 col-sm-3 px-4 ">
                             <a href="https://www.google.com/maps/d/u/2/edit?mid=1_EBRaqmD3jMZd5AaRVLdVu3kLi_KlyaP&usp=sharing"
-                                target="_blank" rel="noopener noreferrer"><img class="lh-marker"
+                                target="_blank" rel="noopener noreferrer"><img class="lh-marker mt-3"
                                     src="/icons/location.png" alt="location" width="42px" height="42px"></a>
                         </div>
-                        <div class="col-10">
+                        <div class="col-12 col-sm-9">
                             <p class="text-center">Street 3, Uttam Kanj, Krishnapuri, Sirohi, Rajasthan 307001</p>
                         </div>
                     </div>
@@ -111,14 +111,14 @@
                 </div>
 
                 <span class="fs-2 fw-bold heading my-4">Branch Office</span>
-                <div class="text-center" style="width: 350px; height: auto;">
-                    <div class="row">
-                        <div class="col-2 px-4">
+                <div class="text-center" style="width: 320px; height: auto;">
+                    <div class="row" style="margin: 0 2rem;">
+                        <div class="col-12 col-sm-3 px-4">
                             <a href="https://www.google.com/maps/d/u/2/edit?mid=1_EBRaqmD3jMZd5AaRVLdVu3kLi_KlyaP&usp=sharing"
-                                target="_blank" rel="noopener noreferrer"><img class="lb-marker"
+                                target="_blank" rel="noopener noreferrer"><img class="lb-marker mt-4"
                                     src="/icons/location.png" alt="location" width="42px" height="42px"></a>
                         </div>
-                        <div class="col-10">
+                        <div class="col-12 col-sm-9">
                             <p>Near Amraiwadi Post Office, Lal Bahadur Shastri Rd, Ahmedabad, Gujarat 380026</p>
                         </div>
                     </div>
@@ -134,10 +134,10 @@
 
     <!-- contact us form -->
     <div class="container-fluid p-0">
-        <div class="container">
-            <div class="row">
+        <div class="container" >
+            <div class="row" >
 
-                <div class="col-12 col-sm d-flex flex-column justify-content-center align-items-center">
+                <div class="col-12 col-sm d-flex flex-column justify-content-center align-items-center" >
                     <span class="fs-2 fw-bold heading my-4">Want Any Help ?</span>
                     <p class="text-center px-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                     
@@ -150,7 +150,7 @@
 
                     </div>
                     <div class="container d-flex justify-content-center align-content-center form-container" style="padding:4rem 4rem;">
-                        <form name='contact' method='POST' class="" style="padding:2rem 2rem;"><input type='hidden' name='form-name' value='contact' />
+                        <form name='contact' method='POST' class="" style="padding:2rem 1rem;width:auto;"><input type='hidden' name='form-name' value='contact' />
                             <p>
                                 <input type="text" name="name" placeholder="Name*" />
                             </p>
@@ -245,7 +245,12 @@
         integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
         crossorigin="anonymous"></script>
     <script>
-        AOS.init();
+        AOS.init({
+            offset: 120, // offset (in px) from the original trigger point
+            delay: 0, // values from 0 to 3000, with step 50ms
+            duration: 2000, // values from 0 to 3000, with step 50ms
+            easing: "ease-in-out"
+        });
     </script>
 </body>
 
