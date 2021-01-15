@@ -1,17 +1,14 @@
-var navbarDropdown = document.getElementById('navbarDropdown');
-var navbarDropdownMenu = document.querySelector('.dropdown-menu');
+// contact us form submission sent to hosting provider
+document.querySelector("form").addEventListener("submit", handleSubmit);
 
-navbarDropdown.addEventListener("mouseover", function () {
-    if (navbarDropdown.getAttribute('class') === 'nav-link dropdown-toggle fs-5') {
-
-        navbarDropdown.setAttribute('class', 'nav-link dropdown-toggle fs-5 show');
-        navbarDropdown.setAttribute('aria-expanded', true);
-        navbarDropdownMenu.setAttribute('class', 'dropdown-menu show');
-    }else{
-
-        navbarDropdown.setAttribute('class', 'nav-link dropdown-toggle fs-5');
-        navbarDropdown.setAttribute('aria-expanded', false);
-        navbarDropdownMenu.setAttribute('class', 'dropdown-menu');
-    }
-});
-
+const handleSubmit = (e) => {
+  e.preventDefault()
+  let myForm = document.getElementById('pizzaOrder');
+  let formData = new FormData(myForm)
+  fetch('/', {
+    method: 'POST',
+    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    body: new URLSearchParams(formData).toString()
+  }).then(() => console.log('Form successfully submitted')).catch((error) =>
+    alert(error))
+}
