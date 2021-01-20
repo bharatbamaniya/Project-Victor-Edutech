@@ -1,6 +1,8 @@
 /* form */
 form {
     transition: .25s ease-in-out;
+    padding:2rem 1rem;
+    width:auto;
 }
 form input, textarea{
     width: 15rem;
