@@ -35,13 +35,13 @@
 }
 
 .navbar {
-    background: radial-gradient(var(--gold),var(--navcolor));
+    background: url(/img/world-map.jpg);
+    background-attachment: fixed;
+    background-size: cover;
     
 }
 .navbar-nav{
-    margin-left: auto;
-    
-    
+    margin-left: auto;   
 }
 .nav-item a {
     border: 2px solid transparent;
@@ -177,9 +177,6 @@
     letter-spacing: -.05rem;
 }
 
-.footer-logo{
-    
-}
 .footer-payment-icon img {
     filter: grayscale(0%);
     margin: 0 .5rem;
@@ -222,6 +219,8 @@
 .bg-secondary-color {
     background-color: var(--bit-secondary);
 }
+
+/* social sticky */
 .search-and-account {
     position: fixed;
     z-index: 15;
@@ -233,6 +232,7 @@
     
 }
 .search-and-account img{
+    
     height: 36px;
     width: 36px;
     margin-top: 0.5rem;
@@ -241,6 +241,7 @@
 .search-and-account .mail{
     height: 42px;
     width: 42px;
+    
 }
 .search-and-account img:hover{
     filter: grayscale(100%);

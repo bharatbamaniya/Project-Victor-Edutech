@@ -22,7 +22,45 @@
             height: 12px;
             width: 12px;
         }
-        
+
+        @media screen and (min-device-width:321px) and  (max-device-width: 767px) {
+            .carousel-caption { 
+                bottom: 5rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .carousel-caption h2{
+                font-size: 2.2rem;   
+                     
+            }
+            .carousel-caption p{
+                font-size: 1.4rem;
+            }
+            .carousel-caption button{
+                font-size: 0.9rem;
+            }
+        }
+        @media screen and (max-width: 320px) {
+            .carousel-caption {
+                bottom: 7rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .carousel-caption h2{
+                font-size: 2.2rem;
+                            
+            }
+            .carousel-caption p{
+                font-size: 1.2rem;
+            }
+            .carousel-caption button{
+                font-size: .8rem;
+            }
+        }
     </style>
 </head>
 
@@ -33,8 +71,8 @@
             style="position: absolute;z-index: 15;background: none;width: 100%;">
 
             <div class="container-fluid">
-                <a href="/index.html" style="margin-left: 12px;"><img src="/img/Victor-logo.svg.png" class="navbar-brand float-md-start img-fluid"
-                        alt="logo" height="80" width="200"></a>
+                <a href="/index.html" style="margin-left: 12px;"><img src="/img/Victor-logo.svg.png"
+                        class="navbar-brand float-md-start img-fluid" alt="logo" height="80" width="200"></a>
                 <!-- <a class="navbar-brand" href="#"></a>Victor Edutech</a> -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -87,8 +125,8 @@
                             </div>
                         </li> -->
                         <li class="nav-item"><a class="nav-link fs-5" href="/visa.html">VISA</a></li>
-                      
-                        
+                        <li class="nav-item"><a class="nav-link fs-5" href="/services.html">SERVICES</a></li>
+
                         <li class="nav-item">
                             <a class="nav-link fs-5" href="/contact.html">CONTACT</a>
                         </li>
@@ -111,7 +149,7 @@
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img src="/img/world-map.jpg" class="d-block w-100" alt="corousal image" height="665px">
-                    <div class="carousel-caption d-none d-md-block">
+                    <div class="carousel-caption d-md-block">
                         <h2>Get A Visa & Immigration</h2>
                         <p>We Are Always Ready To Hear You</p>
                         <button class="btn btn-outline-light">Get An Appointment</button>
@@ -129,6 +167,7 @@
                     </div>
                 </div> -->
             </div>
+
             <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
@@ -137,6 +176,7 @@
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </a>
+
         </div>
 
         <!--Spaces-->
