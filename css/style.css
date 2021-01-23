@@ -55,13 +55,14 @@
 }
 
 .nav-item a:hover {
-    transform: translateY(-5px);
+    /* transform: translateY(-5px); */
     /* transform: translateY(0%); */
     border-bottom: 2px solid var(--gold);
     
 }
 .nav-item .active {
-    font-weight: bolder;transform: translateY(-5px);
+    font-weight: bolder;
+    /* transform: translateY(-5px); */
     border-bottom: 2px solid var(--gold);
 }
 /* dropdown */
