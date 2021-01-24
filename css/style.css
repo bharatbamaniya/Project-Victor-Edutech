@@ -32,6 +32,21 @@
     --navcolor: rgba(50, 50, 51, 0.938);
     --gold:#d1a348;
     --bit-secondary: rgba(63, 63, 63, 0.048);
+    --scrollbarBG: #CFD8DC;
+    --thumbBG: #90A4AE;
+}
+body::-webkit-scrollbar {
+    width: 25px;
+
+}
+body::-webkit-scrollbar-track {
+    background: var(--navcolor);
+    
+}
+body::-webkit-scrollbar-thumb {
+    background-color:  #d49d2fbc;
+    border-radius: 20%;
+    border: 5px solid var(--navcolor);
 }
 
 .navbar {
@@ -219,6 +234,81 @@
 .bg-secondary-color {
     background-color: var(--bit-secondary);
 }
+
+
+
+/* Contact Us// */
+.contact-block { 
+    float:left; 
+    width:100%; 
+    background:#fff; 
+    padding:30px 20px; 
+    text-align:center; 
+    border:2px solid #d5d5d518;
+    margin: 0 0 28px;
+ }
+ .contact-block figure{
+    width:148px; 
+    height:148px; 
+    border-radius:100%; 
+    display:inline-block;
+    margin-bottom: 15px;
+ }
+ .contact-block img{ 
+    width:148px; 
+    height:148px; 
+    border-radius:100%; 
+    box-shadow: 1px 1px 10px 1px rgba(0,0,0,0.3);
+ }
+ .contact-block h3{ 
+    color:#2a2a2a; 
+    font-size:20px; 
+    font-weight:500; 
+    padding:6px 0;
+    /* text-transform:uppercase; */
+ }
+ .contact-block   h3 a{
+   text-decoration:none;
+     color:#2a2a2a;
+ }
+ .contact-block   h3 a:hover{
+     color:#337ab7;
+ }
+ .contact-block   p{ 
+    color:#2a2a2a; 
+    font-size:13px; 
+    line-height:20px; 
+    font-weight:400;
+ }
+ .contact-block .follow-us{
+     margin:2.4rem 0 0;
+ }
+ .contact-block   .follow-us li{ 
+     display:inline-block; 
+     width:auto; 
+     margin:0 5px;
+ }
+ .contact-block .follow-us li img{
+     height: 38px;
+     width: 38px;
+     filter: grayscale(100%);
+ }
+ 
+ .contact-block .follow-us li img:hover{ 
+    filter: grayscale(0%);
+ }
+ .font-size {
+    font-size: 2rem;
+}
+ @media only screen and (max-device-width:992px)
+ {
+     .font-size {
+         font-size: 1.5rem;
+     }
+
+ }
+
+
 
 /* social sticky */
 .search-and-account {
