@@ -346,3 +346,21 @@ body::-webkit-scrollbar-thumb {
 }
 
 
+/* Preloader */
+#loading {
+    position: fixed;
+    padding: 50px;
+    width: 100%;
+    height: 100vh;
+    background: rgb(22,27,31,1);
+    z-index: 99999;
+    /* display: none; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#loading img{
+    width:350px;
+    height:150px;
+    
+}

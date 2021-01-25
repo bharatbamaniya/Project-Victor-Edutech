@@ -12,3 +12,8 @@ const handleSubmit = (e) => {
   }).then(() => console.log('Form successfully submitted')).catch((error) =>
     alert(error))
 }
+
+// Preloader Function
+function loderfunction() {
+  document.getElementById('loading').style.display= 'none'
+}
