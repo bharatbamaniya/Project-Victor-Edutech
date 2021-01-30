@@ -1,1 +1,1 @@
-alert("Query Submitted Successfully ... We will contact you soon");
+window.alert("Query Submitted Successfully ... We will contact you soon");
