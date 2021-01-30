@@ -1,0 +1,1 @@
+alert("Query Submitted Successfully ... We will contact you soon");

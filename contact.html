@@ -233,8 +233,15 @@
                     </div>
                     <div class="container d-flex justify-content-center align-content-center form-container"
                         style="padding:4rem 4rem;">
-                        <form name="contact" method='POST' class="contact-form mx-auto" action="/thanks"
-                            data-netlify-recaptcha="true" data-netlify="true"><input type='hidden' name='form-name'
+                        <form 
+                            name="contact" 
+                            method='POST' 
+                            class="contact-form mx-auto" 
+                            action="/success/"
+                            data-netlify-recaptcha="true" 
+                            data-netlify="true">
+
+                            <input type='hidden' name='form-name'
                                 value='contact' />
                             <p>
                                 <input type="text" name="name" placeholder="Name*" />
