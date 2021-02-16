@@ -164,7 +164,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .card {
-    width: 20rem;
+    width: 25rem;
     padding: 1rem 1rem 1rem 1rem;
     border: none;
     border-radius: 1rem;
@@ -172,11 +172,16 @@ body::-webkit-scrollbar-thumb {
     transition: .5s ease;
 }
 
+.card:hover {
+    box-shadow: 1px 1px 5px grey;
+}
+
 .card img {
     margin: auto;
-    width: 160px;
-    height: 160px;
+    width: 100px;
+    height: 100px;
     transition: .5s;
+    filter: invert(25%) sepia(6%) saturate(3%) hue-rotate(8deg) brightness(100%) contrast(100%);
 }
 
 .card img:hover {
@@ -189,13 +194,18 @@ body::-webkit-scrollbar-thumb {
     color: rgb(31, 31, 31);
     text-decoration: none;
     font-family: 'Ubuntu', sans-serif;
-
+    font-size: medium;
 }
+
+
 
 .card-body a:hover {
     text-shadow: 0.2px 0.2px 0.2px black;
 }
 
+.card-text {
+    font-size: smaller;
+}
 
 .featurette {
     /* padding-op: 120px; */
