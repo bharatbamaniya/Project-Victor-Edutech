@@ -53,14 +53,12 @@ body::-webkit-scrollbar {
 
 body::-webkit-scrollbar-thumb {
   border-radius: 10px;
-  background-image: -webkit-gradient(
-    linear,
-    left bottom,
-    left top,
-    color-stop(0.44, rgb(105, 105, 105)),
-    color-stop(0.72, rgb(47, 47, 47)),
-    color-stop(0.86, rgb(26, 26, 26))
-  );
+  background-image: -webkit-gradient(linear,
+      left bottom,
+      left top,
+      color-stop(0.44, rgb(105, 105, 105)),
+      color-stop(0.72, rgb(47, 47, 47)),
+      color-stop(0.86, rgb(26, 26, 26)));
 }
 
 /* ---------------- */
@@ -76,14 +74,17 @@ body::-webkit-scrollbar-thumb {
   margin-left: auto;
   margin-right: 0px;
 }
+
 @media only screen and (min-width: 992px) {
   .navbar-nav {
     margin-right: 50px;
   }
+
   .nav-link {
     font-size: 1.5rem;
   }
 }
+
 @media only screen and (max-width: 991px) {
   .mainMenu {
     padding: 3rem 2.5rem;
@@ -98,6 +99,7 @@ body::-webkit-scrollbar-thumb {
   .navbar-nav .nav-item .nav-link.active {
     color: black;
   }
+
   .navbar-dark .navbar-nav .nav-link:focus,
   .navbar-dark .navbar-nav .nav-link:hover {
     color: rgba(0, 0, 0, 0.75);
@@ -130,6 +132,7 @@ body::-webkit-scrollbar-thumb {
 .navbar-collapse .collapse .show {
   background-color: #262626;
 }
+
 .menu-area {
   position: static;
 }
@@ -157,7 +160,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .divider {
-  background: url(/img/world-map.jpg);
+  background: url(/img/img1.jpg);
   background-size: cover;
   background-attachment: fixed;
   opacity: 0.8;
@@ -202,8 +205,7 @@ body::-webkit-scrollbar-thumb {
   width: 100px;
   height: 100px;
   transition: 0.5s;
-  filter: invert(25%) sepia(6%) saturate(3%) hue-rotate(8deg) brightness(100%)
-    contrast(100%);
+  filter: invert(25%) sepia(6%) saturate(3%) hue-rotate(8deg) brightness(100%) contrast(100%);
 }
 
 .card img:hover {
@@ -245,15 +247,19 @@ footer {
   background: #262626;
   color: white;
 }
+
 footer a img {
   filter: brightness(0) invert(1);
 }
+
 .footer-link {
   color: var(--scrollbarBG);
 }
+
 .footer-link:hover {
   color: var(--thumbBG);
 }
+
 .footer-payment-icon img {
   filter: grayscale(0%);
   margin: 0 0.5rem;
@@ -267,6 +273,7 @@ footer a img {
   width: 90%;
   image-rendering: pixelated;
 }
+
 .text-reset {
   font-size: 0.9rem;
   transition: 0.4s ease;
@@ -411,13 +418,11 @@ footer a img {
 
 /* contact */
 .lh-marker {
-  filter: invert(19%) sepia(92%) saturate(3008%) hue-rotate(226deg)
-    brightness(87%) contrast(94%);
+  filter: invert(19%) sepia(92%) saturate(3008%) hue-rotate(226deg) brightness(87%) contrast(94%);
 }
 
 .lb-marker {
-  filter: invert(16%) sepia(18%) saturate(6982%) hue-rotate(340deg)
-    brightness(99%) contrast(113%);
+  filter: invert(16%) sepia(18%) saturate(6982%) hue-rotate(340deg) brightness(99%) contrast(113%);
 }
 
 /* Preloader */
