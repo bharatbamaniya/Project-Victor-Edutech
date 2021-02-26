@@ -83,6 +83,21 @@ body::-webkit-scrollbar-thumb {
   .nav-link {
     font-size: 1.5rem;
   }
+  .carousel-inner h2 {
+    text-align: center;
+    font-family: "Ubuntu", sans-serif;
+    padding: 0 2rem 2rem 2rem;
+    margin: 0 4rem 4rem 4rem;
+    font-size: 4rem;
+  }
+
+  .carousel-inner p {
+    text-align: center;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: normal;
+    padding: 0 2rem 2rem 2rem;
+    font-size: 1.5rem;
+  }
 }
 @media only screen and (max-width: 991px) {
   .mainMenu {
@@ -135,26 +150,42 @@ body::-webkit-scrollbar-thumb {
 }
 
 /*  */
+@media screen and (max-width: 992px) {
+  .carousel-inner h2 {
+    text-align: center;
+    font-family: "Ubuntu", sans-serif;
+    /* padding: 0 2rem 2rem 2rem; */
+    margin: 0 4rem 4rem 4rem;
+    /* font-size: 4rem; */
+  }
+
+  .carousel-inner p {
+    text-align: center;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: normal;
+    /* padding: 0 2rem 2rem 2rem; */
+    /* font-size: 1.5rem; */
+  }
+}
 .carousel-inner img {
   filter: brightness(70%);
 }
 
-.carousel-inner h2 {
+/* .carousel-inner h2 {
   text-align: center;
   font-family: "Ubuntu", sans-serif;
-  /* padding: 0 2rem 2rem 2rem; */
+  padding: 0 2rem 2rem 2rem;
   margin: 0 4rem 4rem 4rem;
-  /* font-size: 4rem; */
+  font-size: 4rem;
 }
 
 .carousel-inner p {
   text-align: center;
   font-family: "Ubuntu", sans-serif;
   font-weight: normal;
-  /* padding: 0 2rem 2rem 2rem; */
-
-  /* font-size: 1.5rem; */
-}
+  padding: 0 2rem 2rem 2rem;
+  font-size: 1.5rem;
+} */
 
 .divider {
   background: url(/img/world-map.jpg);
