@@ -66,6 +66,10 @@ body::-webkit-scrollbar-thumb {
 /* ---------------- */
 
 /* ----------------- */
+.row {
+  margin: 0;
+}
+
 .navbar {
   background: url(/img/world-map.jpg);
   background-attachment: fixed;
