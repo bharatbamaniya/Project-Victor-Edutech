@@ -182,6 +182,7 @@ body::-webkit-scrollbar-thumb {
   border-bottom: 0.2rem solid var(--gold);
   font-family: "Ubuntu", sans-serif;
   font-size: 3rem;
+  text-align: center;
 }
 
 .card {
@@ -264,29 +265,31 @@ footer a img {
   filter: grayscale(100%);
 }
 
+footer .follow-us {
+  padding-inline-start: 0px;
+}
 footer i {
   padding: 0 1rem 0 0;
 }
 .footer-map-img {
-  /* padding: 4rem 0 0 0; */
   width: 80%;
   image-rendering: pixelated;
 }
-footer .col-6 {
+.pad-4 {
   padding: 4rem 0 0 0;
 }
-footer .col-6 h5 {
+footer .col-12 h5 {
   display: flex;
   justify-content: center;
   padding-left: 0;
 }
-footer .col-6 .contact-block {
+footer .col-12 .contact-block {
   background: none;
   padding: 0;
   margin: 0;
   border: none;
 }
-footer .col-6 img {
+footer .col-12 img {
   display: grid;
   align-self: center;
 }
