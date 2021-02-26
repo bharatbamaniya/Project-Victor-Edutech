@@ -142,18 +142,18 @@ body::-webkit-scrollbar-thumb {
 .carousel-inner h2 {
   text-align: center;
   font-family: "Ubuntu", sans-serif;
-  padding: 0 2rem 2rem 2rem;
+  /* padding: 0 2rem 2rem 2rem; */
   margin: 0 4rem 4rem 4rem;
-  font-size: 4rem;
+  /* font-size: 4rem; */
 }
 
 .carousel-inner p {
   text-align: center;
   font-family: "Ubuntu", sans-serif;
   font-weight: normal;
-  padding: 0 2rem 2rem 2rem;
+  /* padding: 0 2rem 2rem 2rem; */
 
-  font-size: 1.5rem;
+  /* font-size: 1.5rem; */
 }
 
 .divider {
@@ -250,6 +250,7 @@ footer a img {
 }
 .footer-link {
   color: var(--scrollbarBG);
+  font-family: var(--bs-font-sans-serif);
 }
 .footer-link:hover {
   color: var(--thumbBG);
@@ -263,9 +264,31 @@ footer a img {
   filter: grayscale(100%);
 }
 
+footer i {
+  padding: 0 1rem 0 0;
+}
 .footer-map-img {
-  width: 90%;
+  /* padding: 4rem 0 0 0; */
+  width: 80%;
   image-rendering: pixelated;
+}
+footer .col-6 {
+  padding: 4rem 0 0 0;
+}
+footer .col-6 h5 {
+  display: flex;
+  justify-content: center;
+  padding-left: 0;
+}
+footer .col-6 .contact-block {
+  background: none;
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+footer .col-6 img {
+  display: grid;
+  align-self: center;
 }
 .text-reset {
   font-size: 0.9rem;
