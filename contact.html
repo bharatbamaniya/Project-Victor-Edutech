@@ -20,6 +20,7 @@
 
     <link class="favicon" rel="icon" type="image/png" href="/icons/logo.png">
 
+    <link rel="stylesheet" href="css/dropdown.css">
     <link rel="stylesheet" href="/css/style.css" type="text/css">
     <link rel="stylesheet" href="/css/styleTeamDetail.css" type="text/css">
     <link rel="stylesheet" href="/css/styleForm.css" type="text/css">
@@ -42,6 +43,7 @@
     </div>
 
     <!--NavBar-->
+    <!-- top 1 -->
     <div class="topmenu">
         <div class="container">
             <div class="row  hidden-xs">
@@ -77,6 +79,7 @@
         </div>
     </div>
 
+    <!-- top 2 -->
     <div class="container-fluid p-0">
         <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
 
@@ -93,25 +96,41 @@
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav" style="margin-left: auto;margin-right: 50px;">
+                    <ul class="navbar-nav mainMenu">
                         <li class="nav-item">
-                            <a class="nav-link fs-5 " aria-current="page" href="/index.html">HOME</a>
+                            <a class="nav-link active" aria-current="page" href="/index.html">HOME</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link fs-5 " href="/about.html">ABOUT</a>
+                            <a class="nav-link" href="/about.html">ABOUT</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link fs-5 " href="/visa.html">VISA</a>
+                           <a class="nav-link" href="#" >COUNTRY
+                            <!-- <span class="arrow arrow-down"></span> -->
+                           </a>
+                                <ul class="subMenu">
+                                <li><a class=" fs-6" href="#">SUB LINK</a></li>
+                                <li>
+                                    <a class=" fs-6" href="#">
+                                    <!-- <span class="arrow arrow-left"></span> -->
+                                    SUB LINK</a>
+                                    <ul class="superSubMenu">
+                                        <li><a class=" fs-6" href="#">SUPER SUB LINK</a></li>
+                                        <li><a class=" fs-6" href="#">SUPER SUB LINK</a></li>
+                                        <li><a class=" fs-6" href="#">SUPER SUB LINK</a></li>
+                                        <li><a class=" fs-6" href="#">SUPER SUB LINK</a></li>
+                                    </ul>
+                                </li>
+                                <li><a class=" fs-6" href="#">SUB LINK</a></li>
+                                <li><a class=" fs-6" href="#">SUB LINK</a></li>
+                            </ul>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link fs-5" href="/services.html">SERVICES</a>
-                        </li>
+                        <!-- <li class="nav-item"><a class="nav-link" href="/visa.html">VISA</div>a></li>
+                        <li class="nav-item"><a class="nav-link" href="/country.html">COUNTRY</a></li> -->
 
                         <li class="nav-item">
-                            <a class="nav-link fs-5 active" href="/contact.html">CONTACT</a>
+                            <a class="nav-link" href="/contact.html">CONTACT</a>
                         </li>
                     </ul>
-
                 </div>
             </div>
         </nav>
@@ -136,6 +155,7 @@
     <!-- Map and Office Detail/// -->
     <div class="container-fluid">
         <div class="row">
+            <!-- Map -->
             <map class="col-12 col-sm">
                 <!-- <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.5051562423564!2d72.62476321448845!3d23.005217322750504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e87438adacc93%3A0xfdf7bdbb0a1e9ff5!2sVictor%20Edutech!5e0!3m2!1sen!2sin!4v1610454535350!5m2!1sen!2sin"
@@ -143,8 +163,10 @@
                     tabindex="0"></iframe> -->
 
                 <iframe src="https://www.google.com/maps/d/u/2/embed?mid=1_EBRaqmD3jMZd5AaRVLdVu3kLi_KlyaP" width="100%"
-                    height="580"></iframe>
+                    height="580" loading="lazy"></iframe>
             </map>
+
+            <!-- Office Details -->
             <div class="col-12 col-sm py-5 d-flex flex-column justify-content-center align-items-center">
 
                 <span class="fs-2 fw-bold heading my-4">Head Office</span>

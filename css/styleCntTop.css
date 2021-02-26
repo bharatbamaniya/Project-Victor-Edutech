@@ -1,85 +1,83 @@
-
 .topmenu {
-    background: #161b1f;
-    display: flex;
-    height: 38px;
+  /* background: #161b1f; */
+  background: #262626;
+  display: flex;
+  height: 38px;
 }
 
 ul.social-icons.pull-right.top1 li {
-    list-style-type: none !important;
-    margin-left: -4px;
-    display: inline-block;
+  list-style-type: none !important;
+  margin-left: -4px;
+  display: inline-block;
 }
 
 ul.social-icons.pull-right.top1 li a {
-    padding: 10px 11px;
+  padding: 10px 11px;
 }
 
 ul.social-icons.top2 li {
-    list-style-type: none !important;
-    display: inline-block;
+  list-style-type: none !important;
+  display: inline-block;
 }
 
 ul.social-icons.top2 li a {
-    color: #ffffff;
-    padding: 10px 11px;
-    margin-top: 1rem;
-    font-family: 'Fraunces', serif;
-    text-decoration: none;
+  color: #ffffff;
+  padding: 10px 11px;
+  margin-top: 1rem;
+  font-family: "Fraunces", serif;
+  text-decoration: none;
 }
 
 ul.social-icons.top2 li {
-    list-style-type: none !important;
-    color: #ffffff;
+  list-style-type: none !important;
+  color: #ffffff;
 }
 
 .top1 {
-    margin: 8px 0 0;
+  margin: 8px 0 0;
 }
 
 .top2 {
-    margin: 8px 0 0;
-    padding-left: 15px;
-    padding-right: 15px;
+  margin: 8px 0 0;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 ul.social-icons li a i {
-    color: #ffffff;
+  color: #ffffff;
 }
 
 ul.listarrow-color {
-    list-style-type: none;
-    padding: initial;
+  list-style-type: none;
+  padding: initial;
 }
 
 .count_rate img {
-    position: relative;
-    top: -2px;
-    right: -2px;
+  position: relative;
+  top: -2px;
+  right: -2px;
 }
 
-
 ul.serives-ul {
-    background: #F1F1F1;
-    list-style-type: none;
-    text-align: initial;
+  background: #f1f1f1;
+  list-style-type: none;
+  text-align: initial;
 }
 
 @media only screen and (max-width: 767px) {
-    .topmenu {
-        height: auto !important;
-        /* padding: 15px 0; */
-    }
+  .topmenu {
+    height: auto !important;
+    /* padding: 15px 0; */
+  }
 }
-@media only screen and (max-width: 768px){
-    ul.social-icons.top2 li a{
-        font-size: 0.8rem;
-        padding: 10px 5px;
-    }
-    
+@media only screen and (max-width: 768px) {
+  ul.social-icons.top2 li a {
+    font-size: 0.8rem;
+    padding: 10px 5px;
+  }
 }
 @media (max-width: 767px) {
-    .hidden-xs {
-        display: none !important;
-    }
+  .hidden-xs {
+    display: none !important;
+  }
 }
