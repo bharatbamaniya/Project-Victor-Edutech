@@ -53,12 +53,14 @@ body::-webkit-scrollbar {
 
 body::-webkit-scrollbar-thumb {
   border-radius: 10px;
-  background-image: -webkit-gradient(linear,
-      left bottom,
-      left top,
-      color-stop(0.44, rgb(105, 105, 105)),
-      color-stop(0.72, rgb(47, 47, 47)),
-      color-stop(0.86, rgb(26, 26, 26)));
+  background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(0.44, rgb(105, 105, 105)),
+    color-stop(0.72, rgb(47, 47, 47)),
+    color-stop(0.86, rgb(26, 26, 26))
+  );
 }
 
 /* ---------------- */
@@ -241,7 +243,8 @@ body::-webkit-scrollbar-thumb {
   width: 100px;
   height: 100px;
   transition: 0.5s;
-  filter: invert(25%) sepia(6%) saturate(3%) hue-rotate(8deg) brightness(100%) contrast(100%);
+  filter: invert(25%) sepia(6%) saturate(3%) hue-rotate(8deg) brightness(100%)
+    contrast(100%);
 }
 
 .card img:hover {
@@ -480,11 +483,13 @@ footer .col-12 img {
 
 /* contact */
 .lh-marker {
-  filter: invert(19%) sepia(92%) saturate(3008%) hue-rotate(226deg) brightness(87%) contrast(94%);
+  filter: invert(19%) sepia(92%) saturate(3008%) hue-rotate(226deg)
+    brightness(87%) contrast(94%);
 }
 
 .lb-marker {
-  filter: invert(16%) sepia(18%) saturate(6982%) hue-rotate(340deg) brightness(99%) contrast(113%);
+  filter: invert(16%) sepia(18%) saturate(6982%) hue-rotate(340deg)
+    brightness(99%) contrast(113%);
 }
 
 /* Preloader */
