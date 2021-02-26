@@ -145,18 +145,18 @@ body::-webkit-scrollbar-thumb {
 .carousel-inner h2 {
   text-align: center;
   font-family: "Ubuntu", sans-serif;
-  padding: 0 2rem 2rem 2rem;
+  /* padding: 0 2rem 2rem 2rem; */
   margin: 0 4rem 4rem 4rem;
-  font-size: 4rem;
+  /* font-size: 4rem; */
 }
 
 .carousel-inner p {
   text-align: center;
   font-family: "Ubuntu", sans-serif;
   font-weight: normal;
-  padding: 0 2rem 2rem 2rem;
+  /* padding: 0 2rem 2rem 2rem; */
 
-  font-size: 1.5rem;
+  /* font-size: 1.5rem; */
 }
 
 .divider {
@@ -185,6 +185,7 @@ body::-webkit-scrollbar-thumb {
   border-bottom: 0.2rem solid var(--gold);
   font-family: "Ubuntu", sans-serif;
   font-size: 3rem;
+  text-align: center;
 }
 
 .card {
@@ -254,6 +255,7 @@ footer a img {
 
 .footer-link {
   color: var(--scrollbarBG);
+  font-family: var(--bs-font-sans-serif);
 }
 
 .footer-link:hover {
@@ -269,9 +271,34 @@ footer a img {
   filter: grayscale(100%);
 }
 
+footer .follow-us {
+  padding-inline-start: 0px;
+}
+footer i {
+  padding: 0 1rem 0 0;
+}
 .footer-map-img {
-  width: 90%;
+  width: 80%;
   image-rendering: pixelated;
+}
+
+.pad-4 {
+  padding: 4rem 0 0 0;
+}
+footer .col-12 h5 {
+  display: flex;
+  justify-content: center;
+  padding-left: 0;
+}
+footer .col-12 .contact-block {
+  background: none;
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+footer .col-12 img {
+  display: grid;
+  align-self: center;
 }
 
 .text-reset {
