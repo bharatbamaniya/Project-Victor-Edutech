@@ -1,0 +1,52 @@
+.sign-left {
+  -webkit-clip-path: polygon(25% 0%, 100% 1%, 100% 100%, 25% 100%, 0% 50%);
+  clip-path: polygon(25% 0%, 100% 1%, 100% 100%, 25% 100%, 0% 50%);
+}
+
+.sign-right {
+  -webkit-clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+  clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+}
+
+.chevron-right {
+  -webkit-clip-path: polygon(
+    75% 0%,
+    100% 50%,
+    75% 100%,
+    0% 100%,
+    25% 50%,
+    0% 0%
+  );
+  clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+}
+
+.chevron-left {
+  -webkit-clip-path: polygon(
+    100% 0%,
+    75% 50%,
+    100% 100%,
+    25% 100%,
+    0% 50%,
+    25% 0%
+  );
+  clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+}
+
+/* .shape-outer {
+  display: flex;
+  flex-shrink: 0;
+  height: calc(500px + 4vw);
+  width: calc(500px + 4vw);
+  margin: 25px;
+  background-image: linear-gradient(to bottom right, #ff3cac, #562b7c, #2b86c5);
+}
+
+.shape-inner {
+  height: calc(500px + 4vw);
+  width: calc(500px + 4vw);
+  background: url(https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=300&h=300&fit=crop&crop=faces)
+    no-repeat center;
+  background-size: cover;
+  margin: auto;
+}
+ */
