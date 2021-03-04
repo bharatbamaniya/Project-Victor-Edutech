@@ -105,6 +105,11 @@ body::-webkit-scrollbar-thumb {
     font-size: 1.5rem;
   }
 }
+@media only screen and (min-width: 535px) {
+  .carousel-inner h2 {
+    font-size: 4rem;
+  }
+}
 
 @media only screen and (max-width: 991px) {
   .mainMenu {
