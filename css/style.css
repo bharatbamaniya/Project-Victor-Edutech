@@ -29,6 +29,7 @@
 }
 
 :root {
+  --theme-gradient: linear-gradient(#ddae1e, #e6e16f, #ddae1e);
   --navcolor: rgba(50, 50, 51, 0.938);
   --gold: #d1a348;
   --bit-secondary: rgba(63, 63, 63, 0.048);
@@ -442,6 +443,8 @@ footer .col-12 img {
 .contact-block .follow-us li img {
   height: 38px;
   width: 38px;
+  padding: 6px;
+  background: var(--theme-gradient);
   filter: grayscale(0%);
 }
 
@@ -475,12 +478,16 @@ footer .col-12 img {
   width: 36px;
   margin-top: 0.5rem;
   transition: ease 0.5s;
+  background: var(--theme-gradient);
+  border-radius: 50%;
+  padding: 6px;
+  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.3);
 }
 
-.search-and-account .mail {
+/* .search-and-account .mail {
   height: 42px;
   width: 42px;
-}
+} */
 
 .search-and-account img:hover {
   filter: grayscale(100%);
@@ -528,3 +535,14 @@ footer .col-12 img {
     margin-top: 0;
   } */
 /* } */
+
+.developertext {
+  padding-bottom: 6px;
+  text-align: center;
+}
+.developertext p a {
+  text-decoration: none;
+  background-image: var(--theme-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
