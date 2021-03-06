@@ -549,7 +549,7 @@ footer .col-12 img {
   padding-bottom: 6px;
   text-align: center;
 }
-.developertext p a {
+.developertext small {
   text-decoration: none;
   background-image: var(--theme-gradient);
   -webkit-background-clip: text;
