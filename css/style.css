@@ -226,10 +226,14 @@ body::-webkit-scrollbar-thumb {
 .whatWeDoPara {
   padding: 4rem;
   border-radius: 2rem;
-  background-position: right;
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  background-image: url(/svg/travel-plan.svg);
+  /* background-position: right; */
+  /* background-size: 100% 100%; */
+  /* background-repeat: no-repeat; */
+  /* background-image: url(/svg/travel-plan.svg); */
+}
+.whatWeDoPara p {
+  font-size: 1.5rem;
+  color: black;
 }
 
 .heading {
