@@ -20,7 +20,7 @@
   border: 2px solid black;
   border-radius: 20px;
   position: fixed;
-  z-index: 15;
+  z-index: 99999999999;
   bottom: 0.5rem;
   overflow-y: scroll;
   width: 350px;
