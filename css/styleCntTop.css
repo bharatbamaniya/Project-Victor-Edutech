@@ -1,3 +1,7 @@
+:root {
+  --theme-gradient: linear-gradient(#ddae1e, #e6e16f, #ddae1e);
+}
+
 .topmenu {
   /* background: #161b1f; */
   background: #262626;
@@ -27,14 +31,18 @@ ul.social-icons.top2 li a {
   font-family: "Fraunces", serif;
   text-decoration: none;
 }
-
+ul.social-icons.top2 i {
+  background-image: var(--theme-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 ul.social-icons.top2 li {
   list-style-type: none !important;
   color: #ffffff;
 }
 
 .top1 {
-  margin: 8px 0 0;
+  margin: 8px 0;
 }
 
 .top2 {
@@ -44,7 +52,16 @@ ul.social-icons.top2 li {
 }
 
 ul.social-icons li a i {
-  color: #ffffff;
+  margin-bottom: 8px;
+  width: 26px;
+  height: 26px;
+  text-align: center;
+  padding: 4px;
+  border-radius: 50%;
+  background-image: var(--theme-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #000000;
 }
 
 ul.listarrow-color {

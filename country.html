@@ -22,9 +22,10 @@
 
     <link rel="stylesheet" href="css/shapes.css">
     <link rel="stylesheet" href="css/dropdown.css">
-    <link rel="stylesheet" href="/css/style.css" type="text/css">
-    <link rel="stylesheet" href="/css/styleTeamDetail.css" type="text/css">
-    <link rel="stylesheet" href="/css/styleCntTop.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/styleTeamDetail.css" type="text/css">
+    <link rel="stylesheet" href="css/styleCntTop.css" type="text/css">
+    <link rel="stylesheet" href="css/sideEnquiryForm.css">
     <link rel="stylesheet" href="/fontawesome-free-5.15.2-web/css/all.css" type="text/css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
         integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
@@ -55,7 +56,6 @@
     <div id="loading">
         <img src="/img/Victor-logo.svg.png" alt="Preloader Logo">
     </div>
-
 
     <!--NavBar-->
 
@@ -349,6 +349,49 @@
         </div>
     </header>
 
+    <!-- Side Enquiry Button -->
+    <header>
+        <div class="enquiry-btn" id="enquiry-btn">
+            <h3>Enquiry Form</h3>
+        </div>
+    </header>
+
+    <!-- Side Enquiry Form  -->
+    <header class="side-enquiry-form" id="enquiry-form">
+        <i class="fas fa-times-rectangle" id="enquiry-close">+</i>
+        <div class="form-area" id="form-area">
+            <div class="d-flex flex-column justify-content-center align-items-center">
+
+                <span class="fs-2 fw-bold heading mt-5">Contact Us</span>
+
+            </div>
+            <div class="container d-flex justify-content-center align-content-center form-container"
+                style="padding:4rem 4rem;">
+                <form name="contact" method='POST' class="contact-form mx-auto" action="/success.html"
+                    data-netlify-recaptcha="true" data-netlify="true">
+
+                    <input type='hidden' name='form-name' value='contact' />
+                    <p>
+                        <input type="text" name="name" placeholder="Name*" />
+                    </p>
+                    <p>
+                        <input type="email" name="email" placeholder="Email*" />
+                    </p>
+                    <p>
+                        <input type="text" name="subject" placeholder="Subject*" />
+                    </p>
+                    <p>
+                        <textarea name="message" placeholder="Massage*"></textarea>
+                    </p>
+                   
+                    <p class="d-flex justify-content-center">
+                        <button class="btn" type="submit">Submit <i class="fas fa-plane-departure"></i> </button>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </header>
+
     <!--footer-->
     <footer>
         <div class="container pt-5 footer-background">
@@ -475,11 +518,10 @@
             </div>
 
             <div class="container developertext">
-                <p class="m-0">
-                    Developed By: 
-                    <a href="" target="_blank"
-                    rel="noopener noreferrer">kumar&company
-                </p>
+                <small class="m-0">
+                    Developed By:
+                    <a href="" target="_blank" rel="noopener noreferrer">kumar&company
+                </small>
             </div>
     </footer>
 
