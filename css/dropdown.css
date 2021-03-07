@@ -39,7 +39,7 @@ nav .superSubMenu {
 nav .superSubMenu {
   top: 0;
   right: 0;
-  transform: translate(-70%, 0);
+  transform: translate(-94%, 0);
 }
 
 @media only screen and (min-width: 993px) {
