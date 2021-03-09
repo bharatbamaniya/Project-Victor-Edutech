@@ -226,24 +226,38 @@
 
     <!-- Side Enquiry Form  -->
     <header>
-    <div id="contact">
-      <div class="container">
-        <h3>Reach Out to Me!</h3>
-        <form name="contact" method="POST" action="" data-netlify="true">
-          <p>
-            <label>Your Name: <input type="text" name="name"/></label>
-          </p>
-          <p>
-            <label>Your Email: <input type="email" name="email"/></label>
-          </p>
-            <label>Message: <textarea name="message"></textarea></label>
-          </p>
-          <p><button type="submit">Send</button></p>
-        </form>
-      </div>
-    </div>
+    
     </header>
 
+     <!-- Side Enquiry Form  -->
+     <header class="side-enquiry-form" id="enquiry-form">
+        <i class="fas fa-times-rectangle" id="enquiry-close">+</i>
+        <div class="form-area" id="form-area">
+            <div class="d-flex flex-column justify-content-center align-items-center">
+
+                <span class="fs-2 fw-bold heading mt-5">Contact Us</span>
+
+            </div>
+            <div class="container d-flex justify-content-center align-content-center form-container"
+                style="padding:4rem 4rem;">
+                <div id="contact">
+                   
+                      <form name="contact" method="POST" action="/success.html" data-netlify="true">
+                        <p>
+                          <label>Your Name: <input type="text" name="name"/></label>
+                        </p>
+                        <p>
+                          <label>Your Email: <input type="email" name="email"/></label>
+                        </p>
+                          <label>Message: <textarea name="message"></textarea></label>
+                        </p>
+                        <p><button type="submit">Send</button></p>
+                      </form>
+                   
+                  </div>
+            </div>
+        </div>
+    </header>
 
     <!--footer-->
     <footer>
