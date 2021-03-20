@@ -224,15 +224,20 @@ body::-webkit-scrollbar-thumb {
 }
 
 .whatWeDoPara {
-  padding: 4rem;
+  padding: 2rem;
+  display: grid;
+  place-content: center;
+  /* margin: 2rem 0; */
   border-radius: 2rem;
+  background: var(--bit-secondary);
+  max-width: 700px;
   /* background-position: right; */
   /* background-size: 100% 100%; */
   /* background-repeat: no-repeat; */
   /* background-image: url(/svg/travel-plan.svg); */
 }
 .whatWeDoPara p {
-  font-size: 1.5rem;
+  font-size: 1.235rem;
   color: black;
 }
 
