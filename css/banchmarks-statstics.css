@@ -1,0 +1,41 @@
+/* statstics */
+
+.statistics {
+  margin-bottom: 2rem;
+  /* font-family: var(--font-theme); */
+  /* font-weight: 300; */
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: var(--bit-secondary);
+  padding: 1rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  border-radius: 20px;
+}
+.statistics::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  top: 80%;
+  left: 0;
+  right: 0;
+  display: block;
+  width: 100%;
+  box-shadow: 0 10px 20px -6px var(--navcolor);
+}
+
+.statistics h2 {
+  margin: 0;
+  background-image: var(--theme-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: var(--font-stencil);
+}
+
+.statistics h5 {
+  /* margin: 0; */
+  font-family: var(--font-stencil);
+}

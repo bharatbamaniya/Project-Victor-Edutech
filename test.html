@@ -43,6 +43,10 @@
             width: 12px;
         }
 
+
+
+        /* fAQ // frequently asked question */
+
         .question-cards {
             display: flex;
             justify-content: center;
@@ -125,20 +129,33 @@
         }
 
 
-
-
-
+        /* statstics */
 
         .statistics {
             margin-bottom: 2rem;
             /* font-family: var(--font-theme); */
             /* font-weight: 300; */
-            /* display: flex;
+            position: relative;
             flex-direction: column;
             align-items: center;
-            justify-content: center; */
+            justify-content: center; 
             text-align: center;
-            /* font */
+            background: var(--bit-secondary);
+            padding: 1rem;
+            margin-left: 0.5rem;
+            margin-right: 0.5rem;
+            border-radius: 20px;
+        }
+        .statistics::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            top: 80%;
+            left: 0;
+            right: 0;
+            display: block;
+            width: 100%;
+            box-shadow: 0 10px 20px -6px var(--navcolor);
         }
 
         .statistics h2 {
@@ -154,6 +171,8 @@
             /* margin: 0; */
             font-family: var(--font-stencil);
         }
+
+
     </style>
 </head>
 
@@ -223,7 +242,7 @@
 
 
     <!-- statistics -->
-    <section class="bg-dark">
+    <!-- <section class="bg-dark">
         <div class="container text-light d-flex justify-content-center py-4 fs-3 font-monospace">
             <span class="heading"> numbers represent us</span>
         </div>
@@ -254,7 +273,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
 
 
