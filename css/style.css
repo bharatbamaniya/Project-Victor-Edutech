@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Stardos+Stencil&display=swap");
 
 /* 
 @media screen and (min-device-width: 1200px) and (-webkit-min-device-pixel-ratio: 1) {
@@ -36,6 +37,9 @@
   --dark-gray: #262626;
   --scrollbarBG: #cfd8dc;
   --thumbBG: #90a4ae;
+  --font-theme: "Ubuntu";
+  --font-stencil: "Stardos Stencil", cursive;
+  --bg-dark: #212529 !important;
 }
 
 /* ----------scroller */
@@ -87,12 +91,13 @@ body::-webkit-scrollbar-thumb {
     margin-right: 50px;
   }
 
-  .nav-link {
+  .navbar-nav .nav-item .nav-link {
     font-size: 1.5rem;
+    color: white;
   }
   .carousel-inner h2 {
     text-align: center;
-    font-family: "Ubuntu", sans-serif;
+    font-family: var(--font-theme);
     padding: 0 2rem 2rem 2rem;
     margin: 0 4rem 4rem 4rem;
     font-size: 4rem;
@@ -100,7 +105,7 @@ body::-webkit-scrollbar-thumb {
 
   .carousel-inner p {
     text-align: center;
-    font-family: "Ubuntu", sans-serif;
+    font-family: var(--font-theme);
     font-weight: normal;
     padding: 0 2rem 2rem 2rem;
     font-size: 1.5rem;
@@ -168,7 +173,7 @@ body::-webkit-scrollbar-thumb {
 @media screen and (max-width: 992px) {
   .carousel-inner h2 {
     text-align: center;
-    font-family: "Ubuntu", sans-serif;
+    font-family: var(--font-theme);
     /* padding: 0 2rem 2rem 2rem; */
     margin: 0 4rem 4rem 4rem;
     /* font-size: 4rem; */
@@ -176,7 +181,7 @@ body::-webkit-scrollbar-thumb {
 
   .carousel-inner p {
     text-align: center;
-    font-family: "Ubuntu", sans-serif;
+    font-family: var(--font-theme);
     font-weight: normal;
     /* padding: 0 2rem 2rem 2rem; */
     /* font-size: 1.5rem; */
@@ -188,7 +193,7 @@ body::-webkit-scrollbar-thumb {
 
 /* .carousel-inner h2 {
   text-align: center;
-  font-family: "Ubuntu", sans-serif;
+  font-family: var(--font-theme);
   padding: 0 2rem 2rem 2rem;
   margin: 0 4rem 4rem 4rem;
   font-size: 4rem;
@@ -196,7 +201,7 @@ body::-webkit-scrollbar-thumb {
 
 .carousel-inner p {
   text-align: center;
-  font-family: "Ubuntu", sans-serif;
+  font-family: var(--font-theme);
   font-weight: normal;
   padding: 0 2rem 2rem 2rem;
   font-size: 1.5rem;
@@ -244,7 +249,7 @@ body::-webkit-scrollbar-thumb {
 .heading {
   letter-spacing: 0.15rem;
   border-bottom: 0.2rem solid var(--gold);
-  font-family: "Ubuntu", sans-serif;
+  font-family: var(--font-theme);
   font-size: 3rem;
   text-align: center;
 }
@@ -279,7 +284,7 @@ body::-webkit-scrollbar-thumb {
 .card-body a {
   color: rgb(31, 31, 31);
   text-decoration: none;
-  font-family: "Ubuntu", sans-serif;
+  font-family: var(--font-theme);
   font-size: medium;
 }
 
@@ -307,7 +312,7 @@ body::-webkit-scrollbar-thumb {
 
 footer {
   margin: 0;
-  background: #262626;
+  background: var(--dark-gray);
   color: white;
 }
 

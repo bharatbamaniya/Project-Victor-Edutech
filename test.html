@@ -42,14 +42,126 @@
             height: 12px;
             width: 12px;
         }
+
+        .question-cards {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* margin: 1px; */
+            padding: 2rem 2rem;
+            position: relative;
+            cursor: pointer;
+            max-width: 100%;
+            height: 450px;
+        }
+
+        .question-cards img {
+            filter: brightness(35%);
+            /* padding: 2rem; */
+            height: 100%;
+            width: 100%;
+        }
+
+        .question-cards h3,
+        .question-cards p {
+            /* width: 100%; */
+            /* height: 100%; */
+            font-family: var(--font-theme);
+            text-align: center;
+            position: absolute;
+            padding: 2rem;
+            transition: 0.2s ease-in-out;
+        }
+
+        .question-cards h3 {
+            color: wheat;
+            font-size: 5.5vh;
+            transition: .2s ease-in-out;
+
+        }
+
+        .question-cards p {
+            color: white;
+            display: none;
+            font-size: 2.4vh;
+        }
+
+        .question-cards:hover p {
+            display: block;
+            transform: translateY(5vh)
+        }
+
+        .question-cards:hover h3 {
+            opacity: 0.4;
+            font-size: 3.2vh;
+            /* display: none; */
+            top: 1rem;
+        }
+
+        @media screen and (max-width: 768px) {
+            .question-cards:hover h3 {
+                display: none;
+            }
+        }
+
+        .question-cards:before,
+        .question-cards:after {
+            z-index: -1;
+            position: absolute;
+            content: "";
+            bottom: 50px;
+            left: 50px;
+            width: 50%;
+            top: 80%;
+            background: var(--thumbBG);
+            box-shadow: 0 25px 20px black;
+            transform: rotate(-2deg);
+        }
+
+        .question-cards:after {
+            transform: rotate(2deg);
+            right: 50px;
+            left: auto;
+        }
+
+
+
+
+
+
+        .statistics {
+            margin-bottom: 2rem;
+            /* font-family: var(--font-theme); */
+            /* font-weight: 300; */
+            /* display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center; */
+            text-align: center;
+            /* font */
+        }
+
+        .statistics h2 {
+            margin: 0;
+            background-image: var(--theme-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-family: var(--font-stencil);
+
+        }
+
+        .statistics h5 {
+            /* margin: 0; */
+            font-family: var(--font-stencil);
+        }
     </style>
 </head>
 
 <body onload="loderfunction()">
 
-    
 
 
+    <!-- 
     <div class="container row">
         <div class="whatWeDoPara col-md-8">
             <p class="lead">
@@ -72,15 +184,77 @@
               </form>
               
         </div>
+    </div> -->
+
+    <div class="p-4 m-4">
+
     </div>
+    <hr>
+
+
+    <!-- frequenty asked questions -->
+
+    <!-- <section>
+        <div class="container p-0">
+            <div class="row d-flex justify-content-center align-content-center">
+                <div class="question-cards col-md-6 col-12">
+                    <img src="img/heading-1.jpg" alt="Country image">
+                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi voluptates quas quia ?</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum itaque fugiat ipsam doloremque
+                        ipsa voluptates, aspernatur corporis pariatur, ex quos nobis possimus enim explicabo illo quae
+                        omnis tenetur sit! Minima! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id, hic
+                        eius! Veritatis quas neque, ipsa dolorum aut fugiat totam, error ratione repellat aliquam ipsum!
+                        Commodi excepturi alias cum facere dolorem?</p>
+                </div>
+                <div class="question-cards col-md-6 col-12">
+                    <img src="img/heading-2.jpg" alt="image">
+                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi voluptates quas quia.</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum itaque fugiat ipsam doloremque
+                        ipsa voluptates, aspernatur corporis pariatur, ex quos nobis possimus enim explicabo illo quae
+                        omnis tenetur sit! Minima! Lorem ipsum, dolor sit amet consectetur adipisicing elit. A error
+                        officiis nemo? Quam et, fugiat pariatur, non natus excepturi nobis ducimus laboriosam
+                        perferendis consequuntur, dolore consequatur blanditiis mollitia recusandae dicta.</p>
+                </div>
+            </div>
+        </div>
+    </section> -->
 
 
 
 
-
-
-   
-
+    <!-- statistics -->
+    <section class="bg-dark">
+        <div class="container text-light d-flex justify-content-center py-4 fs-3 font-monospace">
+            <span class="heading"> numbers represent us</span>
+        </div>
+        <div class="container text-center text-light lead mb-4">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus delectus saepe voluptate </p>
+        </div>
+        <div class="container-fluid text-light lead">
+            <div class="row d-flex justify-content-center align-content-center">
+                <div class="statistics col-md-2 col-12">
+                    <h2>100+</h2>
+                    <h5>Universities</h5>
+                </div>
+                <div class="statistics col-md-2 col-12">
+                    <h2>4</h2>
+                    <h5>Offices</h5>
+                </div>
+                <div class="statistics col-md-2 col-12">
+                    <h2>1000+</h2>
+                    <h5>Students</h5>
+                </div>
+                <div class="statistics col-md-2 col-12">
+                    <h2>4.7</h2>
+                    <h5>Rating on facebook</h5>
+                </div>
+                <div class="statistics col-md-2 col-12">
+                    <h2>4.8</h2>
+                    <h5>Rating on Google</h5>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
 

@@ -11,28 +11,34 @@
   /* border: 1px solid var(--dark-gray); */
   /* margin: 2rem 0.5rem; */
   padding: 2rem;
-  border-radius: 1rem;
+  /* border-radius: 1rem; */
   /* min-width: 250px; */
   max-width: 350px;
   height: 100%;
-
+  font-family: var(--font-theme);
   /* max-height: 100%; */
+  background: white;
   display: grid;
   place-items: center;
-  box-shadow: 1px 0.5px 3px black;
+  box-shadow: 1px 1px 3px rgb(5, 5, 5), -1px -1px 3px rgb(5, 5, 5);
 
   transition: all 0.5s ease-in-out;
 }
 .side-enquiry-form h2 {
   padding: 10px;
+  color: black;
 }
-
+.side-enquiry-form label {
+  color: black;
+}
 .side-enquiry-form textarea,
 input {
   display: block;
   max-width: 250px;
   border: none;
   outline: none;
+  background: none;
+  color: black;
   border-bottom: 1px solid rgb(158, 158, 158);
 }
 .side-enquiry-form textarea:focus,
@@ -41,6 +47,7 @@ input:focus {
 }
 .formarea button {
   /* display: block; */
+  color: black;
   border: none;
   border-radius: 10px;
   outline: none;
@@ -52,7 +59,7 @@ input:focus {
   border: thin solid var(--gold);
 }
 .formarea button:hover {
-  background-color: var(--bit-secondary);
+  background-color: var(--thumbBG);
 }
 .formarea label {
   display: block;
