@@ -254,7 +254,7 @@ body::-webkit-scrollbar-thumb {
   text-align: center;
 }
 
-.card {
+.s-cards {
   width: 25rem;
   padding: 1rem 1rem 1rem 1rem;
   border: none;
@@ -263,11 +263,11 @@ body::-webkit-scrollbar-thumb {
   transition: 0.5s ease;
 }
 
-.card:hover {
+.s-cards:hover {
   box-shadow: 1px 1px 5px grey;
 }
 
-.card img {
+.s-cards img {
   margin: auto;
   width: 100px;
   height: 100px;
@@ -276,23 +276,23 @@ body::-webkit-scrollbar-thumb {
     contrast(100%);
 }
 
-.card img:hover {
+.s-cards img:hover {
   transform: scale(1.05);
   cursor: pointer;
 }
 
-.card-body a {
+.s-cards .card-body a {
   color: rgb(31, 31, 31);
   text-decoration: none;
   font-family: var(--font-theme);
   font-size: medium;
 }
 
-.card-body a:hover {
+.s-cards .card-body a:hover {
   text-shadow: 0.2px 0.2px 0.2px black;
 }
 
-.card-text {
+.s-cards .card-text {
   font-size: smaller;
 }
 

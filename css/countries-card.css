@@ -1,0 +1,71 @@
+.countries-card {
+  width: 25rem;
+  padding: 1rem 1rem 1rem 1rem;
+  border: none;
+  border-radius: 1rem;
+  margin: 0 1rem 0 1rem;
+  transition: 0.5s ease;
+}
+
+/* .countries-cards:hover {
+  box-shadow: 1px 1px 5px grey;
+} */
+
+.countries-card img {
+  margin: auto;
+  width: 160px;
+  height: 100%;
+  transition: 0.5s;
+  /* filter: invert(25%) sepia(6%) saturate(3%) hue-rotate(8deg) brightness(100%)
+    contrast(100%); */
+}
+
+.countries-card img:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.countries-card .card-body a {
+  color: rgb(31, 31, 31);
+  text-decoration: none;
+  font-family: var(--font-theme);
+  font-size: medium;
+}
+
+/* .countries-cards .card-body a:hover {
+  text-shadow: 0.2px 0.2px 0.2px black;
+} */
+
+.countries-card .card-text {
+  font-size: smaller;
+}
+
+.countries-card:before,
+.countries-card:after {
+  z-index: -1;
+  position: absolute;
+  content: "";
+  bottom: 0px;
+  left: 10px;
+  width: 50%;
+  top: 90%;
+  /* max-width: 300px; */
+  background: #777;
+  -webkit-box-shadow: 0 15px 10px #777;
+  -moz-box-shadow: 0 15px 10px #777;
+  box-shadow: 0 15px 10px #777;
+  -webkit-transform: rotate(-3deg);
+  -moz-transform: rotate(-3deg);
+  -o-transform: rotate(-3deg);
+  -ms-transform: rotate(-3deg);
+  transform: rotate(-3deg);
+}
+.countries-card:after {
+  -webkit-transform: rotate(3deg);
+  -moz-transform: rotate(3deg);
+  -o-transform: rotate(3deg);
+  -ms-transform: rotate(3deg);
+  transform: rotate(3deg);
+  right: 10px;
+  left: auto;
+}
