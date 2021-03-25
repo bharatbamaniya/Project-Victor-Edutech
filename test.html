@@ -129,8 +129,56 @@
         }
 
 
-        /* statstics */
+        
 
+
+
+        /* contact-direction */
+        #contact-direction a{
+            text-decoration: none;
+            color: white;
+            font-family: var(--font-stencil);
+            letter-spacing: 1px;
+        }     
+        .contact-directon--P-link {
+            padding: 2rem 0 3rem 0;
+            text-align: center;
+            
+        }
+        .contact-directon--P-link a {
+            /* border: 1px solid white; */
+            padding: 1rem;
+            margin-bottom: 5rem;
+            border-radius: 30px; 
+             position: relative;
+             z-index: 99;
+             box-shadow: 0 1px 5px rgb(110, 110, 110);
+        }
+        .contact-directon--P-link a::before {
+            content: "";
+            position: absolute;
+            display: block;
+            z-index: -1;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            right: 0;
+            width: 0%;
+            height: 100%;
+            border-radius: 30px;
+            transition: 0.2s ease-in-out;
+        }
+        .contact-directon--P-link a:hover:before {
+            background: var(--navcolor);
+            width: 100%;
+            left: 0;
+        }
+
+
+
+
+
+        /* statstics */
         .statistics {
             margin-bottom: 2rem;
             /* font-family: var(--font-theme); */
@@ -171,6 +219,27 @@
             /* margin: 0; */
             font-family: var(--font-stencil);
         }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     </style>
@@ -262,39 +331,19 @@
 
 
 
-    <!-- statistics -->
-    <!-- <section class="bg-dark">
+    <!-- contact-direction section -->
+    <section class="bg-dark"  id="contact-direction">
         <div class="container text-light d-flex justify-content-center py-4 fs-3 font-monospace">
-            <span class="heading"> numbers represent us</span>
+            <span class="heading"> start consulting today</span>
         </div>
         <div class="container text-center text-light lead mb-4">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus delectus saepe voluptate </p>
+            <p>Call an adviser <a href="+917426831362"><strong>(+91) 74268 31362</strong></a></p>
+             
         </div>
-        <div class="container-fluid text-light lead">
-            <div class="row d-flex justify-content-center align-content-center">
-                <div class="statistics col-md-2 col-12">
-                    <h2>100+</h2>
-                    <h5>Universities</h5>
-                </div>
-                <div class="statistics col-md-2 col-12">
-                    <h2>4</h2>
-                    <h5>Offices</h5>
-                </div>
-                <div class="statistics col-md-2 col-12">
-                    <h2>1000+</h2>
-                    <h5>Students</h5>
-                </div>
-                <div class="statistics col-md-2 col-12">
-                    <h2>4.7</h2>
-                    <h5>Rating on facebook</h5>
-                </div>
-                <div class="statistics col-md-2 col-12">
-                    <h2>4.8</h2>
-                    <h5>Rating on Google</h5>
-                </div>
-            </div>
+        <div class="container lead contact-directon--P-link">
+           <a href="#contactform" class="">Get Appointment</a>
         </div>
-    </section> -->
+    </section>
 
 
 

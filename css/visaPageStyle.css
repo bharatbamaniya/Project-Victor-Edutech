@@ -32,3 +32,57 @@
     display: none;
   }
 }
+
+/* 
+.
+.
+.
+.
+.
+*/
+
+/* contact-direction */
+
+/* 
+.
+.
+..
+. */
+#contact-direction a {
+  text-decoration: none;
+  color: white;
+  font-family: var(--font-stencil);
+  letter-spacing: 1px;
+}
+.contact-directon--P-link {
+  padding: 2rem 0 3rem 0;
+  text-align: center;
+}
+.contact-directon--P-link a {
+  /* border: 1px solid white; */
+  padding: 1rem;
+  margin-bottom: 5rem;
+  border-radius: 30px;
+  position: relative;
+  z-index: 99;
+  box-shadow: 0 1px 5px rgb(110, 110, 110);
+}
+.contact-directon--P-link a::before {
+  content: "";
+  position: absolute;
+  display: block;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  right: 0;
+  width: 0%;
+  height: 100%;
+  border-radius: 30px;
+  transition: 0.2s ease-in-out;
+}
+.contact-directon--P-link a:hover:before {
+  background: var(--navcolor);
+  width: 100%;
+  left: 0;
+}
