@@ -14,3 +14,5 @@ enquiryClose.addEventListener("click", (click) => {
 function loderfunction() {
   document.getElementById("loading").style.display = "none";
 }
+
+// image slider on visa page
