@@ -32,7 +32,7 @@ nav .subMenu a::before {
   vertical-align: middle;
   width: 0px;
   height: 2px;
-  background: var(--theme-gradient);
+  /* background: var(--theme-gradient); */
   transition: 0.2s ease-in-out;
 }
 nav .subMenu li:hover a::before {
