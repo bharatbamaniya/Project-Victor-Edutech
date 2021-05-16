@@ -21,7 +21,7 @@
   color: white;
 }
 .carousel-inner img {
-  height: 200px;
+  height: 350px;
   filter: brightness(70%) blur(1rem);
 }
 .subMenu {
