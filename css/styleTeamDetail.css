@@ -98,6 +98,12 @@ ul {
 }
 .our-webcoderskull .cnt-block .follow-us {
   /* margin: 2rem 0 0; */
+  display: none;
+  position: relative;
+  transition: 0.2s ease-in-out;
+}
+.our-webcoderskull .cnt-block:hover .follow-us {
+  display: block;
 }
 .our-webcoderskull .cnt-block .follow-us li {
   display: inline-block;
