@@ -58,14 +58,12 @@ body::-webkit-scrollbar {
 
 body::-webkit-scrollbar-thumb {
   border-radius: 10px;
-  background-image: -webkit-gradient(
-    linear,
-    left bottom,
-    left top,
-    color-stop(0.44, rgb(105, 105, 105)),
-    color-stop(0.72, rgb(47, 47, 47)),
-    color-stop(0.86, rgb(26, 26, 26))
-  );
+  background-image: -webkit-gradient(linear,
+      left bottom,
+      left top,
+      color-stop(0.44, rgb(105, 105, 105)),
+      color-stop(0.72, rgb(47, 47, 47)),
+      color-stop(0.86, rgb(26, 26, 26)));
 }
 
 /* ---------------- */
@@ -95,6 +93,7 @@ body::-webkit-scrollbar-thumb {
     font-size: 1.5rem;
     color: white;
   }
+
   .carousel-inner h2 {
     text-align: center;
     font-family: var(--font-theme);
@@ -111,6 +110,7 @@ body::-webkit-scrollbar-thumb {
     font-size: 1.5rem;
   }
 }
+
 @media only screen and (min-width: 535px) {
   .carousel-inner h2 {
     font-size: 4rem;
@@ -187,6 +187,7 @@ body::-webkit-scrollbar-thumb {
     /* font-size: 1.5rem; */
   }
 }
+
 .carousel-inner img {
   filter: brightness(70%);
 }
@@ -241,6 +242,7 @@ body::-webkit-scrollbar-thumb {
   /* background-repeat: no-repeat; */
   /* background-image: url(/svg/travel-plan.svg); */
 }
+
 .whatWeDoPara p {
   font-size: 1.235rem;
   color: black;
@@ -272,8 +274,8 @@ body::-webkit-scrollbar-thumb {
   width: 100px;
   height: 100px;
   transition: 0.5s;
-  filter: invert(25%) sepia(6%) saturate(3%) hue-rotate(8deg) brightness(100%)
-    contrast(100%);
+  /* filter: invert(25%) sepia(6%) saturate(3%) hue-rotate(8deg) brightness(100%) */
+  /* contrast(100%); */
 }
 
 .s-cards img:hover {
@@ -341,9 +343,11 @@ footer a img {
 footer .follow-us {
   padding-inline-start: 0px;
 }
+
 footer i {
   padding: 0 1rem 0 0;
 }
+
 .footer-map-img {
   width: 80%;
   image-rendering: pixelated;
@@ -352,17 +356,20 @@ footer i {
 .pad-4 {
   padding: 4rem 0 0 0;
 }
+
 footer .col-12 h5 {
   display: flex;
   justify-content: center;
   padding-left: 0;
 }
+
 footer .col-12 .contact-block {
   background: none;
   padding: 0;
   margin: 0;
   border: none;
 }
+
 footer .col-12 img {
   display: grid;
   align-self: center;
@@ -518,13 +525,11 @@ footer .col-12 img {
 
 /* contact */
 .lh-marker {
-  filter: invert(19%) sepia(92%) saturate(3008%) hue-rotate(226deg)
-    brightness(87%) contrast(94%);
+  filter: invert(19%) sepia(92%) saturate(3008%) hue-rotate(226deg) brightness(87%) contrast(94%);
 }
 
 .lb-marker {
-  filter: invert(16%) sepia(18%) saturate(6982%) hue-rotate(340deg)
-    brightness(99%) contrast(113%);
+  filter: invert(16%) sepia(18%) saturate(6982%) hue-rotate(340deg) brightness(99%) contrast(113%);
 }
 
 /* Preloader */
@@ -563,6 +568,7 @@ footer .col-12 img {
   padding-bottom: 6px;
   text-align: center;
 }
+
 .developertext small {
   text-decoration: none;
   background-image: var(--theme-gradient);
