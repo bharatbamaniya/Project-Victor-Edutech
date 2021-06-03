@@ -7,8 +7,8 @@
 .testimonial .testimonial-content {
   padding: 35px 25px 35px 50px;
   margin-bottom: 35px;
-  background: #fff;
-  border: 1px solid #f0f0f0;
+  background: #5d5d5d;
+  border: 1px solid #505050;
   position: relative;
 }
 .testimonial .testimonial-content:after {
@@ -16,7 +16,7 @@
   display: inline-block;
   width: 20px;
   height: 20px;
-  background: #fff;
+  background: #5d5d5d;
   position: absolute;
   bottom: -10px;
   left: 22px;
@@ -25,7 +25,7 @@
 .testimonial-content .testimonial-icon {
   width: 50px;
   height: 45px;
-  background: #ff4242;
+  background: var(--bs-yellow);
   text-align: center;
   font-size: 22px;
   color: #fff;
@@ -36,7 +36,7 @@
 }
 .testimonial-content .testimonial-icon:before {
   content: "";
-  border-bottom: 16px solid #e41212;
+  border-bottom: 16px solid #473939;
   border-left: 18px solid transparent;
   position: absolute;
   top: -16px;
@@ -45,7 +45,7 @@
 .testimonial .description {
   font-size: 15px;
   font-style: italic;
-  color: #8a8a8a;
+  color: #fff;
   line-height: 23px;
   margin: 0;
 }
