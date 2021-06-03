@@ -13,7 +13,6 @@
   padding: 2rem;
   /* border-radius: 1rem; */
   /* min-width: 250px; */
-  max-width: 350px;
   height: 100%;
   font-family: var(--font-theme);
   /* max-height: 100%; */
@@ -24,6 +23,7 @@
 
   transition: all 0.5s ease-in-out;
 }
+
 .side-enquiry-form h2 {
   padding: 10px;
   color: black;
@@ -32,15 +32,16 @@
   color: black;
 }
 .side-enquiry-form textarea,
-input {
+.side-enquiry-form input {
   display: block;
-  max-width: 250px;
+  max-width: 320px;
   border: none;
   outline: none;
   background: none;
   color: black;
   border-bottom: 1px solid rgb(158, 158, 158);
 }
+
 .side-enquiry-form textarea:focus,
 input:focus {
   border-bottom: 2px solid #26a69a;
@@ -63,4 +64,33 @@ input:focus {
 }
 .formarea label {
   display: block;
+}
+@media screen and (min-width: 1200px) {
+  .side-enquiry-form textarea,
+  .side-enquiry-form input {
+    width: 320px;
+  }
+}
+@media screen and (max-width: 1066px) {
+  .side-enquiry-form {
+    margin-top: 30px;
+  }
+}
+@media screen and (min-width: 1066px) and (max-width: 1200px) {
+  .side-enquiry-form textarea,
+  .side-enquiry-form input {
+    width: 240px;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 1066px) {
+  .side-enquiry-form textarea,
+  .side-enquiry-form input {
+    width: 320px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .side-enquiry-form textarea,
+  .side-enquiry-form input {
+    width: 180px;
+  }
 }
